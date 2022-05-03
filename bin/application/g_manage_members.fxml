@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.g_manage_members">
+   <top>
+      <AnchorPane prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: deepskyblue;" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: dodgerblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="30.0" layoutY="50.0" text="First Name :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="100.0" text="Last Name :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="150.0" text="Date of Birth :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="200.0" text="Roll No :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="250.0" text="Standard :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="350.0" text="Faculty :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="400.0" text="Shift :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="450.0" text="Section :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="300.0" text="Gender :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="500.0" text="Age :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="750.0" layoutY="50.0" text="Height :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="750.0" layoutY="100.0" text="Weight :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="750.0" layoutY="150.0" text="Blood Group:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="750.0" layoutY="200.0" text="Address :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="750.0" layoutY="250.0" text="Phone No:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="750.0" layoutY="300.0" text="Email :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="first_name" layoutX="210.0" layoutY="50.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="last_name" layoutX="210.0" layoutY="100.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="dob" layoutX="210.0" layoutY="150.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="roll_no" layoutX="210.0" layoutY="200.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="standard" layoutX="210.0" layoutY="250.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="gender" layoutX="210.0" layoutY="300.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="faculty" layoutX="210.0" layoutY="350.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="shift" layoutX="210.0" layoutY="400.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="section" layoutX="210.0" layoutY="450.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="age" layoutX="210.0" layoutY="500.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="height" layoutX="905.0" layoutY="50.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="weight" layoutX="905.0" layoutY="100.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="blood_group" layoutX="905.0" layoutY="150.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="address" layoutX="905.0" layoutY="200.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="phone_no" layoutX="905.0" layoutY="250.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="email" layoutX="905.0" layoutY="300.0" prefHeight="35.0" prefWidth="350.0" />
+            <Button layoutX="211.0" layoutY="582.0" mnemonicParsing="false" onAction="#after_clicking_add_members" prefHeight="35.0" prefWidth="200.0" text="Add Member" />
+            <Button layoutX="441.0" layoutY="582.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" text="Clear all information" />
+            <Button fx:id="select_image_button" layoutX="750.0" layoutY="343.0" mnemonicParsing="false" onAction="#after_clicking_select_button" prefHeight="35.0" prefWidth="200.0" text="Upload Image" />
+            <AnchorPane layoutX="1011.0" layoutY="343.0" minHeight="150.0" prefHeight="80.0" prefWidth="20.0" style="-fx-background-color: yellow;">
+               <children>
+                  <ImageView fx:id="cover_imageview" fitHeight="150.0" fitWidth="200.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <TextArea fx:id="cover_image_url_textarea" layoutX="750.0" layoutY="393.0" prefHeight="50.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

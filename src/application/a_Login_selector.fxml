@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.a_Login_selector">
+   <top>
+      <HBox prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="74.0" prefWidth="634.0" text="Library Management System">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+         </children></HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox minHeight="222.0" prefHeight="50.0" prefWidth="200.0" spacing="75.0" style="-fx-background-color: skyblue;">
+               <children>
+                  <Button fx:id="student_button" mnemonicParsing="false" onAction="#studentLogin">
+                     <graphic>
+                        <ImageView id="icon_student1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/boy.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="librarian_button" mnemonicParsing="false" onAction="#librarianLogin">
+                     <graphic>
+                        <ImageView id="icon_librarian1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/images.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="admin_button" mnemonicParsing="false" onAction="#adminLogin">
+                     <graphic>
+                        <ImageView id="icon_admin1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/admin1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="77.0" right="20.0" top="60.0" />
+               </padding>
+            </HBox>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: skyblue;">
+               <children>
+                  <Label layoutX="60.0" layoutY="14.0" prefHeight="20.0" prefWidth="300.0" style="-fx-text-fill: white;" text="Student Login">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="558.0" layoutY="14.0" prefHeight="20.0" prefWidth="300.0" style="-fx-text-fill: white;" text="Admin Login">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="305.0" layoutY="14.0" prefHeight="20.0" prefWidth="300.0" style="-fx-text-fill: white;" text="Librarian login">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.f_manage_books">
+   <top>
+      <AnchorPane prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: aqua;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="405.0" layoutY="14.0" prefHeight="55.0" prefWidth="824.0" text="Library Management System">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: skyblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="30.0" layoutY="30.0" text="Book ID :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="80.0" text="ISBN Number :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="130.0" text="Title :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="180.0" text="Author :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="230.0" text="Description :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="500.0" text="Category :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="400.0" text="Publisher :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="450.0" text="Language :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="350.0" text="Price :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="550.0" text="Book Type :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="750.0" layoutY="30.0" text="Edition :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="750.0" layoutY="80.0" text="Year :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="750.0" layoutY="130.0" text="Pages :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="750.0" layoutY="180.0" text="Shelf :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="750.0" layoutY="230.0" text="Date Added :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="750.0" layoutY="280.0" text="Keywords :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="book_id" layoutX="210.0" layoutY="30.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="isbn_number" layoutX="210.0" layoutY="78.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="title" layoutX="210.0" layoutY="130.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextArea fx:id="description" layoutX="210.0" layoutY="230.0" prefHeight="102.0" prefWidth="350.0" />
+            <TextField fx:id="author" layoutX="210.0" layoutY="180.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="price" layoutX="210.0" layoutY="350.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="publisher" layoutX="210.0" layoutY="400.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="language" layoutX="210.0" layoutY="450.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="category" layoutX="210.0" layoutY="500.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="book_type" layoutX="210.0" layoutY="550.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="edition" layoutX="905.0" layoutY="30.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="year" layoutX="905.0" layoutY="80.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="pages" layoutX="905.0" layoutY="130.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="shelf" layoutX="905.0" layoutY="180.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="date_added" layoutX="905.0" layoutY="230.0" prefHeight="35.0" prefWidth="350.0" />
+            <TextField fx:id="keywords" layoutX="905.0" layoutY="280.0" prefHeight="35.0" prefWidth="350.0" />
+            <Button layoutX="750.0" layoutY="550.0" mnemonicParsing="false" onAction="#after_clicking_add_book" prefHeight="35.0" prefWidth="200.0" text="Add book" />
+            <Button layoutX="1022.0" layoutY="550.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" text="Clear all information" />
+            <Button fx:id="select_image_button" layoutX="750.0" layoutY="343.0" mnemonicParsing="false" onAction="#after_clicking_select_button" prefHeight="35.0" prefWidth="200.0" text="Select Image" />
+            <AnchorPane layoutX="1011.0" layoutY="343.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="cover_imageview" fitHeight="150.0" fitWidth="200.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <TextArea fx:id="cover_image_url_textarea" layoutX="750.0" layoutY="393.0" prefHeight="50.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

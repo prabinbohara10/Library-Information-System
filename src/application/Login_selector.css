@@ -1,0 +1,23 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+#librarian_login_layout{
+	
+  /*  -fx-background-image: url("../../images/login_background.jpg");
+    -fx-background-size:cover;   */
+ 
+}
+
+/*#username_field{
+   -fx-background-color:red;
+}
+
+#password_field{
+  -fx-background-color: blue;	
+}
+ */
+ 
+ #librarian_login_button{
+ 	-fx-background-color:green;
+ 	-fx-border-radius:20;
+ }
