@@ -8,6 +8,7 @@ It allows both the admin and the librarian to search for the desired book.
 It becomes necessary for schools, colleges and various institution to keep a continuous check on the books issued and returned and even calculate fine. This task if carried out manually will be tedious and includes chances of mistakes. These errors are avoided by allowing the system to keep track of information such as issue date, last date to return the book and even fine information and thus there is no need to keep manual track of this information which thereby avoids chances of mistakes. Thus this system reduces manual work to a great extent allows smooth flow of library activities by removing chances of errors in the details.
 Login System: The login feature can allow librarian and admin to log into their accounts and perform various tasks.
 The basic modules included the Login system are,
+
 1)Admin:
  Admin is the one who administers the system by adding or removing e-books into and from the system respectively. Admin even has authority to remove librarian accordingly.
 
